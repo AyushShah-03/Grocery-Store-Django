@@ -1,0 +1,194 @@
+b{
+  overflow-x: hidden;
+  white-space: nowrap; /* Prevent content from wrapping to a new line */
+}
+.card-img-top
+{
+  height: 100px;
+  width: 288px;
+}
+.user{
+    text-transform: capitalize;
+    }
+
+body::-webkit-scrollbar{
+display:none;
+}
+
+nav {
+    float: right;
+    margin: 0 auto;
+    }
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+    }
+    nav ul li a {
+        display: block;
+        padding: 0 20px;
+        line-height: 70px;
+        background: black;
+        color: white;
+        text-decoration: none;
+        opacity: 0.75;
+        /*
+        The full path of this code is nav ul li a:not(:only-child):after. This means that the code will apply to any a tag in our nav list that is NOT an only child, aka any dropdown. The :after means it comes after the output of the tag. I’ve decided that to specify any nav item as a dropdown, it will be followed by a unicode arrow – ▾ (#9662).
+        */
+        }
+        nav ul li a:hover {
+            background: linear-gradient(to right, #03571e, #7ded33);
+            color: white;
+            transition: 1s;
+            }
+            nav ul li a:not(:only-child):after {
+            padding-left: 4px;
+            content: ' ▾';
+            }
+            nav ul li ul li {
+            min-width: 190px;
+            }
+            nav ul li ul li a {
+            padding: 15px;
+            line-height: 20px;
+            }
+            .nav-dropdown {
+                position: absolute;
+                z-index: 1;
+                /* Guarantees that the dropdown will display on top of any content. */
+                box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+                display: none;
+                }
+                .nav-mobile {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background: #fff;
+                    height: 70px;
+                    width: 70px;
+                    }
+                    .card-title{
+                      text-transform: capitalize;
+                    }
+
+                    @media only screen and (max-width: 800px) {
+                        .nav-mobile {
+                          display: block;
+                        }
+                        
+                        nav {
+                          width: 100%;
+                          padding: 70px 0 15px;
+                        }
+                        nav ul {
+                          display: none;
+                        }
+                        nav ul li {
+                          float: none;
+                        }
+                        nav ul li a {
+                          padding: 15px;
+                          line-height: 20px;
+                          
+                        }
+                        nav ul li ul li a {
+                          padding-left: 30px;
+                        }
+                        }
+                        #nav-toggle {
+                        position: absolute;
+                        left: 18px;
+                        top: 22px;
+                        cursor: pointer;
+                        padding: 10px 35px 16px 0px;
+                        z-index: 1;
+                        }
+                        #nav-toggle span,
+                        #nav-toggle span:before,
+                        #nav-toggle span:after {
+                        cursor: pointer;
+                        border-radius: 1px;
+                        height: 5px;
+                        width: 35px;
+                        background: black;
+                        position: absolute;
+                        display: block;
+                        content: '';
+                        transition: all 500ms ease-in-out;
+                        
+                        }
+                        #nav-toggle span:before {
+                        top: -10px;
+                        }
+                        #nav-toggle span:after {
+                        bottom: -10px;
+                        }
+                        #nav-toggle.active span {
+                        background-color: transparent;
+                        }
+                        #nav-toggle.active span:before, #nav-toggle.active span:after {
+                        top: 0;
+                        }
+                        #nav-toggle.active span:before {
+                        transform: rotate(45deg);
+                        }
+                        #nav-toggle.active span:after {
+                        transform: rotate(-45deg);
+                        }
+
+                        @media screen and (min-width: 800px) {
+                            .nav-list {
+                              display: block !important;
+                            }
+                            }
+
+
+.nav-container {
+margin: 0 auto;
+}
+
+.brand {
+position: absolute;
+padding-left: 20px;
+float: left;
+line-height: 70px;
+text-transform: uppercase;
+font-size: 1.4em;
+
+}
+.brand a,
+.brand a:visited {
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: #e0dcdc;
+text-decoration: none;
+}
+.navigation{
+  background-color: black;
+}
+
+.scrollspy button{
+position:relative;
+height: 50px; /* Adjust the height as needed */
+bottom: 20px;
+right: 20px;
+background-color: transparent;
+color: #fff;
+padding: 10px 15px;
+border: none;
+border-radius: 10%;
+font-size: 20px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+.scrollspy button:hover {
+background-color: black;
+transition: 1s;
+opacity: 0.75;
+}

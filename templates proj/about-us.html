@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About us</title>
+
+    <style>
+        body::-webkit-scrollbar{
+          display:none;
+          background-color: black;
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        body {
+          background-image: url(https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80); /* Replace with the path or URL of your background image */
+          background-size: cover; /* Ensures the image covers the entire background */
+          background-repeat: no-repeat; /* Prevents image repetition */
+          background-attachment: fixed; /* Fixes the background while scrolling */
+          font-family: 'Ubuntu', sans-serif;
+      }
+        html {
+          box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+
+        .column {
+          float: none;
+          margin: 0 auto;
+          width: 70%; /* Adjust the width as needed */
+          
+          padding: 0 8px;
+          
+        }
+
+        .card {
+          border-radius: 10px;
+          box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+          background-color: black;
+          text-align: center;
+          margin: 0 auto;
+          max-width: 500px; /* Adjust the maximum width as needed */
+          opacity: 0.9;
+          color: white;
+        }
+        img {
+          border-radius: 20px;
+          width:500px;
+          height: 470px;
+
+        }
+
+        .about-section {
+          border-radius: 20px;
+          padding: 50px;
+          text-align: center;
+          background-color: black;
+          color: white;
+          opacity: 0.75;
+        }
+
+        .container {
+          padding: 0 16px;
+        }
+
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        .title {
+          color: grey;
+        }
+
+        .button {
+          background: linear-gradient(to right, #03571e, #3d880c);
+          border-radius: 20px;
+          outline: none;
+          border: none;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          text-align: center;
+          cursor: pointer;
+          width: 40%;
+          
+        }
+
+        .button:hover {
+          background-color: #555;
+          transition: 1s;
+        }
+
+        .link{
+            text-decoration: none;
+            color: white;
+        }
+        .link:hover{
+            color: #3d880c;
+            transition: 1s;
+        }
+
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+    </style>
+
+</head>
+<body class="body">
+<div class="about-section">
+    <h1>“DON’T GO TO MART, BE SMART” </h1>
+    <h2>SHOP SMART WITH US </h2>
+
+    <p>
+        Greetings to all the Customers out there!!!!!
+        <br> <br>We welcome you to the platform where we consistently strive to offer the best of services.
+        <br>This platform has been designed for those wishing to shop with ease and still avoid compromise with quality
+        <br>We have got the best quality goods, excellent services and best offers to make your shopping experience beyond great
+        <br>Access best quality and fresh  fruits, vegetables and grocery, straight from farm, at your fingertips, anytime and anywhere
+        <br> <br> Thank you for choosing and supporting us!
+    </p>
+    <a href="/" class="link" >Go to homepage</a>
+</div>
+
+<div class="row" >
+    <div class="column">
+        <div class="card">
+            <a  style=" text-align: center;" href="https://ibb.co/qmkgzDb">
+              <img src="https://i.ibb.co/P1wWRrB/8abd4512-e059-4440-a77c-11c7335cec6a.png" alt="Ayush" border="0"></a><br />
+            <div class="container">
+                <h2 style="text-align: center;">AYUSH SHAH</h2>
+                <p class="title"></p>
+                <p style="text-align: center;">CE Engineering (LJ UNIVERSITY) <br></p>
+                <p style="text-align: center;">ayushshah.rockstar@gmail.com</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                    <p><button class="button" >Contact</button></p>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
